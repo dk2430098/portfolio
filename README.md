@@ -79,6 +79,5 @@ src/
 **Deepak Kumar**  
 📧 deepakkumar@nitmanipur.ac.in  
 🔗 [LinkedIn](https://www.linkedin.com/in/deepak-kumar-34921b269/)
-..
-that is good .. could you enhanced this.. add live link : https://portfolio-sandy-sigma-i6rqbrkbdg.vercel.app/
+live link : https://portfolio-sandy-sigma-i6rqbrkbdg.vercel.app/
 github Link : https://github.com/dk2430098/portfolio?tab=readme-ov-file
