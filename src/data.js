@@ -143,7 +143,7 @@ export const projects = [
         title: "AI-Assisted Quiz App",
         description: "Interactive knowledge quiz built for SDE assignment. Features AI-generated questions, retry logic, global state management, and personalized AI feedback.",
         tech: ["React", "TypeScript", "Vite", "Context API", "AI Service"],
-        link: "https://quiz-2fzcgmqq1-deepak-kumars-projects-fcc2a798.vercel.app",
+        link: "https://quiz-hazel-one.vercel.app/",
         github: "https://github.com/dk2430098/quiz"
     },
     {
