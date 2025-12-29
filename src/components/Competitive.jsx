@@ -166,7 +166,7 @@ const Competitive = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+                <div className="cp-header">
                     <h2 className="section-title gradient-text" style={{ marginBottom: 0 }}>Competitive Programming</h2>
                     <motion.div
                         animate={{ rotate: 360 }}
@@ -176,7 +176,7 @@ const Competitive = () => {
                     </motion.div>
                 </div>
 
-                <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', maxWidth: '800px', marginBottom: '2rem' }}>
+                <p className="cp-description">
                     Pushing limits with algorithms. Regularly competing to sharp problem-solving intuition.
                 </p>
 

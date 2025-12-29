@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { profile } from '../data';
+import '../styles/About.css';
 
 const About = () => {
     return (
@@ -12,18 +13,18 @@ const About = () => {
                 transition={{ duration: 0.5 }}
             >
                 <h2 className="section-title gradient-text">About Me</h2>
-                <div className="glass-card p-8" style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
-                    <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+                <div className="glass-card about-card">
+                    <p className="about-text">
                         {profile.about}
                     </p>
-                    <div style={{ marginTop: '2rem', display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
-                        <div>
-                            <h3 style={{ color: 'var(--accent-primary)', marginBottom: '0.5rem' }}>Location</h3>
+                    <div className="about-details">
+                        <div className="detail-item">
+                            <h3>Location</h3>
                             <p>{profile.location}</p>
                         </div>
-                        <div>
-                            <h3 style={{ color: 'var(--accent-primary)', marginBottom: '0.5rem' }}>Email</h3>
-                            <p><a href={`mailto:${profile.email}`} style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>{profile.email}</a></p>
+                        <div className="detail-item">
+                            <h3>Email</h3>
+                            <p><a href={`mailto:${profile.email}`} className="detail-link">{profile.email}</a></p>
                         </div>
                     </div>
                 </div>

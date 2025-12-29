@@ -1,3 +1,36 @@
+/* Main Layout Styles */
+.cp-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cp-description {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+/* Mobile Responsive Overrides */
+@media (max-width: 768px) {
+    .cp-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .cp-description {
+        font-size: 1rem;
+        /* Smaller font for mobile */
+        text-align: center;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+        /* Prevent edge touching */
+    }
+}
+
 .cp-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

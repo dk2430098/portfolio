@@ -1,0 +1,56 @@
+/* About Section Styles */
+.about-card {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.about-details {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.detail-item h3 {
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+}
+
+.detail-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.detail-link:hover {
+    color: var(--accent-primary);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .about-details {
+        flex-direction: column;
+        /* Stack vertically */
+        gap: 1rem;
+        /* Reduce gap from 2rem to 1rem */
+        align-items: center;
+        /* Center align for better look */
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+        font-size: 1rem;
+    }
+}

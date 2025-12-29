@@ -9,11 +9,14 @@ import Skills from './components/Skills';
 import Competitive from './components/Competitive';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+import ScrollProgress from './components/ScrollProgress';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <ScrollProgress />
       <Navbar />
       <Hero />
       <About />
@@ -24,6 +27,7 @@ function App() {
       <Competitive />
       <Certifications />
       <Contact />
+      <Footer />
     </div>
   );
 }

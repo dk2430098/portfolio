@@ -95,9 +95,6 @@ const Contact = () => {
                 </form>
             </div>
 
-            <footer style={{ textAlign: 'center', marginTop: '5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                <p>© {new Date().getFullYear()} Deepak Kumar. All rights reserved.</p>
-            </footer>
         </section>
     );
 };
