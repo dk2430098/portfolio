@@ -1,72 +1,90 @@
-# Portfolio Website 🚀
+```markdown
+# 🌐 Portfolio Website
 
-A modern, responsive, and interactive personal portfolio website built with **React**, **Vite**, and **Framer Motion**.  
-This project showcases my skills, projects, competitive programming stats, and achievements with a premium glassmorphism design.
+🔗 **Live Website:** https://portfolio-sandy-sigma-i6rqbrkbdg.vercel.app/  
+📂 **GitHub Repository:** https://github.com/dk2430098/portfolio  
+
+---
+
+## 🚀 About the Project
+
+This is my **personal portfolio website**, built to showcase my skills, projects, achievements, and experience as a **Computer Science Engineering student** and **Full-Stack Developer**.  
+The website is designed with a modern, clean UI and focuses on performance, responsiveness, and user experience.
+
+It highlights my journey, technical expertise, and real-world projects in a professional and interactive way.
+
+---
 
 ## ✨ Features
 
-- **3D Interactive Hero**: A dynamic hero section with 3D tilt effects and glare animations.
-- **Glassmorphism UI**: Unified, modern, dark-themed aesthetics.
-- **Live Competitive Stats**: Real-time fetching of LeetCode ratings and stats, with robust error handling and fallback values.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
-- **Dynamic Sections**:
-  - **About**: Concise professional summary.
-  - **Experience**: Vertical timeline with detailed internships/roles.
-  - **Projects**: Showcase of top projects with links to GitHub and live demos.
-  - **Skills**: Visual representation of technical expertise.
-  - **Certifications**: Verified credentials from AWS, Google, Microsoft, etc.
-  - **Contact**: Functional contact form integrated with email services.
+- Modern and responsive UI with smooth animations  
+- Interactive sections for **About, Skills, Projects, Experience, and Contact**  
+- Clean and minimal **glassmorphism-based design**  
+- Real-time **GitHub activity and stats integration**  
+- Optimized for desktop, tablet, and mobile devices  
+- Fast performance with Vite + React  
 
-## 🛠️ Tech Stack
+---
 
-- **Frontend**: React (Vite)
-- **Styling**: Pure CSS (Variables, Glassmorphism), Framer Motion (Animations)
-- **Icons**: Lucide React
-- **Hosting**: Vercel / Render
+## 🧩 Tech Stack
 
-## 🚀 Getting Started
+### Frontend
+- **React (Vite)**
+- **JavaScript (ES6+)**
+- **HTML5 & CSS3**
+- **Framer Motion** (animations)
+- **Lucide Icons**
 
-Follow these steps to run the project locally.
+### Styling
+- Custom CSS  
+- Responsive & mobile-first design  
 
-### Prerequisites
+### Deployment
+- **Vercel**
 
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/dk2430098/portfolio.git
-    cd portfolio
-    ```
-
-2.  **Install dependencies**
-    ```bash
-    npm install
-    ```
-
-3.  **Run the development server**
-    ```bash
-    npm run dev
-    ```
-
-4.  Open `http://localhost:5173` in your browser.
+---
 
 ## 📂 Project Structure
 
 ```
+
 src/
-├── assets/         # Images and static assets
-├── components/     # Reusable React components (Hero, About, Projects...)
-├── styles/         # CSS files for each component
-├── data.js         # Centralized data file for easy updates
-├── App.jsx         # Main application entry
-└── main.jsx        # React DOM rendering
+├── assets/            # Images & icons
+├── components/        # Reusable UI components
+├── sections/          # About, Projects, Skills, Contact
+├── data/              # Static data & configuration
+├── App.jsx            # Main application component
+└── main.jsx           # Entry point
+
 ```
 
-## 🤝 Contact
+---
 
-**Deepak Kumar**  
-📧 deepakkumar@nitmanipur.ac.in  
-🔗 [LinkedIn](https://www.linkedin.com/in/deepak-kumar-34921b269/)
+## 🧠 What This Project Demonstrates
+
+- Clean and scalable frontend architecture  
+- Strong UI/UX fundamentals  
+- Component-based development  
+- Effective state and layout management  
+- Real-world project structuring  
+
+---
+
+## 🧑‍💻 About Me
+
+I’m **Deepak Kumar**, a **Computer Science Engineering student at NIT Manipur** passionate about building scalable software solutions. I enjoy working on full-stack development, system design, and problem-solving through code.
+
+I actively participate in hackathons, competitive programming, and open-source development. My goal is to create impactful applications that solve real-world problems.
+
+---
+
+## 📬 Contact
+
+📧 **Email:** deepakkumar@nitmanipur.ac.in  
+🔗 **GitHub:** https://github.com/dk2430098  
+🌐 **Portfolio:** https://portfolio-sandy-sigma-i6rqbrkbdg.vercel.app  
+
+---
+
+⭐ *If you like this project, consider giving it a star — it really helps!*
+```
