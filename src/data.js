@@ -136,7 +136,8 @@ export const projects = [
         title: "Airbnb Clone",
         description: "Full-stack replica of Airbnb allowing users to explore listings, view details, and manage properties. Features secure authentication and dynamic content rendering.",
         tech: ["Node.js", "Express", "MongoDB", "EJS"],
-        link: "airbnb-colon-ccm2.vercel.app",
+        link: "https://airbnb-colon-ccm2.vercel.app/listings
+",
         github: "https://github.com/dk2430098/airbnb_colon"
     },
     {
