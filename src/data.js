@@ -132,13 +132,12 @@ export const projects = [
         link: "https://true-pic-git-main-deepak-kumars-projects-fcc2a798.vercel.app/",
         github: "https://github.com/dk2430098/TruePic"
     },
-    {
-        title: "Airbnb Clone",
-        description: "Full-stack replica of Airbnb allowing users to explore listings, view details, and manage properties. Features secure authentication and dynamic content rendering.",
-        tech: ["Node.js", "Express", "MongoDB", "EJS"],
-        link: "https://airbnb-colon-ccm2.vercel.app/listings
-",
-        github: "https://github.com/dk2430098/airbnb_colon"
+   {
+      title: "Airbnb Clone",
+      description: "A full-stack Airbnb clone that allows users to explore listings, view property details, and manage properties with secure authentication and dynamic content rendering.",
+      tech: ["Node.js", "Express", "MongoDB", "EJS"],
+      link: "https://airbnb-colon-ccm2.vercel.app/listings",
+      github: "https://github.com/dk2430098/airbnb_colon"
     },
     {
         title: "AI-Assisted Quiz App",
