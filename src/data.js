@@ -122,7 +122,7 @@ export const projects = [
         title: "StudentFeedback Portal",
         description: "High-throughput complaint platform supporting 1000+ monthly submissions. Features status workflow, closure proofs, and automated routing.",
         tech: ["Node.js", "Express", "MongoDB", "Cloud Storage"],
-        link: "https://student-feedback-xjx1.onrender.com/",
+        link: "https://student-feedback-beta.vercel.app",
         github: "https://github.com/dk2430098/student_feedback"
     },
     {
