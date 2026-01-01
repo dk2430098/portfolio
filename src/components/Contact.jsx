@@ -4,6 +4,64 @@ import { Mail, Linkedin, Github } from 'lucide-react';
 import { profile } from '../data';
 
 const Contact = () => {
+    const [state, setState] = React.useState({
+        submitting: false,
+        succeeded: false,
+        errors: []
+    });
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setState(prev => ({ ...prev, submitting: true }));
+
+        const formData = new FormData(e.target);
+
+        try {
+            const response = await fetch("https://formspree.io/f/xpqzopbz", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setState({ submitting: false, succeeded: true, errors: [] });
+            } else {
+                const data = await response.json();
+                setState({ submitting: false, succeeded: false, errors: data.errors || [] });
+            }
+        } catch (error) {
+            setState({ submitting: false, succeeded: false, errors: [{ message: "Something went wrong. Please try again." }] });
+        }
+    };
+
+    if (state.succeeded) {
+        return (
+            <section id="contact" className="section container">
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="section-title gradient-text"
+                >
+                    Get In Touch
+                </motion.h2>
+                <div className="glass-card" style={{ maxWidth: '600px', margin: '0 auto', padding: '3rem', textAlign: 'center' }}>
+                    <motion.div
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ type: "spring", duration: 0.5 }}
+                    >
+                        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>Message Sent Successfully!</h3>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem' }}>
+                            Thank you for giving information, I will come back soon.
+                        </p>
+                    </motion.div>
+                </div>
+            </section>
+        );
+    }
+
     return (
         <section id="contact" className="section container">
             <motion.h2
@@ -43,8 +101,7 @@ const Contact = () => {
 
                 <form
                     style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}
-                    action="https://formspree.io/f/xpqzopbz"
-                    method="POST"
+                    onSubmit={handleSubmit}
                 >
                     <input
                         name="name"
@@ -89,12 +146,23 @@ const Contact = () => {
                             resize: 'none'
                         }}
                     ></textarea>
-                    <button type="submit" className="btn-primary" style={{ width: '100%', marginTop: '1rem' }}>
-                        Send Message
+                    {state.errors && state.errors.length > 0 && (
+                        <div style={{ color: 'red', textAlign: 'center' }}>
+                            {state.errors.map((error, index) => (
+                                <p key={index}>{error.message || "Failed to send message"}</p>
+                            ))}
+                        </div>
+                    )}
+                    <button
+                        type="submit"
+                        disabled={state.submitting}
+                        className="btn-primary"
+                        style={{ width: '100%', marginTop: '1rem', opacity: state.submitting ? 0.7 : 1 }}
+                    >
+                        {state.submitting ? 'Sending...' : 'Send Message'}
                     </button>
                 </form>
             </div>
-
         </section>
     );
 };
