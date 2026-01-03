@@ -108,7 +108,7 @@ export const projects = [
         title: "IMeet – Video Interview Platform",
         description: "Scalable platform supporting 500+ concurrent interviews with video/audio calls, screen sharing, and collaborative code editor. Implemented real-time sync with 99.9% uptime.",
         tech: ["Next.js", "Convex", "Clerk", "Stream", "WebRTC"],
-        link: "https://i-meet-73tv-git-main-deepak-kumars-projects-fcc2a798.vercel.app",
+        link: "https://i-meet-73tv.vercel.app/",
         github: "https://github.com/dk2430098/IMeet"
     },
     {
